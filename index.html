@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="underscore(study).js"></script>
+    <!--<script src="underscore(%E5%88%86%E6%9E%90).js"></script>-->
+</head>
+
+<body>
+<script>
+    // _.each([1, 2, 3], function (item, index, obj) {
+    //     console.log(item, index, obj);
+    // });
+    // _.each({'a': 1, 'b': 2}, function (item, index, obj) {
+    //     console.log(item, index, obj);
+    // });
+    //
+    // console.log(_.findIndex([4, 4, 6, 7, 9], function(a, b, c) {
+    //     return a === 9;
+    // }));
+    // var users = [{
+    //         'id': 1,
+    //         'name': 'Bob',
+    //         'last': 'Brown'
+    //     },
+    //     {
+    //         'id': 2,
+    //         'name': 'Ted',
+    //         'last': 'White'
+    //     },
+    //     {
+    //         'id': 3,
+    //         'name': 'Frank',
+    //         'last': 'James'
+    //     },
+    //     {
+    //         'id': 4,
+    //         'name': 'Ted',
+    //         'last': 'Jones'
+    //     }
+    // ];
+    // var a = _.findIndex(users, {
+    //     name: 'Ted'
+    // });
+    // console.log(a);
+
+    // console.log(_.assign({name: 'moe', age: 60}, {age: 50}, {age: 90}));
+    // console.log(_.extend({name: 'moe', age: 60}, {age: 50}));
+    // var stooge = {name: 'moe', age: 32};
+    // console.log(_.isMatch(stooge, {age: 32}));
+
+    // console.log(_.map([1, 2, 3], function (num) {
+    //     return num * 3;
+    // }));
+    // console.log(_.map({one: 1, two: 2, three: 3}, function (num, key) {
+    //     return num * 3;
+    // }));
+
+    // var sum = _.reduce([1, 2, 3], function(memo, num){
+    //     console.log(memo, num);
+    //     return memo + num;
+    //     }, 0);
+    // console.log(sum);
+
+    // var even = _.find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+    // console.log(even);
+
+    // var evens = _.filter([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+    // console.log(evens);
+
+    // var listOfpaly = [{title: "Cymbeline", author: "Shakespeare", year: 1611},
+    //     {title: "The Tempest", author: "Shakespeare", year: 1611}, {title: "The Teest", author: "Shakeare", year: 1611}];
+    // var event = _.where(listOfpaly, {author: "Shakespeare", year: 1611});
+    // console.log(event);
+
+    // var odds = _.reject([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+    // console.log(odds);
+
+    // var a = _.every([true, 1, null, 'yes'], function (c, i) {
+    //     return c == true;
+    // });
+    // console.log(a);
+
+    // console.log(_.some([null, 0, 'yes', false]));
+	//    var a =_.invoke([[5, 1, 7], [3, 2, 1]], 'sort', function(a, b) {
+	//		return b - a;
+	//	});
+//	 var a =_.invoke([[5, 1, 7], [3, 2, 1]], function() {
+//		 console.log(this, );
+//		 return this;
+//	 });
+	var a =_.invoke({name: 'jj', age: '男'}, ['name', 'age']);
+    console.log(a);
+</script>
+</body>
+
+</html>
